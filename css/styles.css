@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Reset default browser styles */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* background substrate */
+.main-wrapper {
+  background-image: url(https://www.fg-a.com/wallpapers/2021-large-burst-of-stars-wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Content styles */
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 20px 40px;
+  background-color: white;
+  border-radius: 4px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.23;
+  letter-spacing: 0.03;
+  text-align: center;
+}
+
+.answers-list {
+  margin-top: -30px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.answers-item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.answers-button {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.23;
+  letter-spacing: 0.03;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 30px 36px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: box-shadow 250ms cubic-bezier(0.17, 0.67, 1, 0.38),
+    opacity 250ms cubic-bezier(0.17, 0.67, 1, 0.38);
+}
+
+.answers-button:hover,
+.answers-button:focus {
+  box-shadow: 5px 5px 10px;
+  opacity: 0.7;
+}
+
+.first-btn {
+  background-color: red;
+}
+
+.second-btn {
+  background-color: blue;
+}
+
+.third-btn {
+  background-color: orange;
+}
+
+.forth-btn {
+  background-color: green;
+}
+
+.answers-button-selected {
+  box-shadow: 5px 5px 10px;
+  opacity: 0.7;
+  color: darkblue;
+  background-color: yellow;
+}
